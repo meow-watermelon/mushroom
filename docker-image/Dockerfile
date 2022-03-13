@@ -23,4 +23,4 @@ COPY --chown=root:root shared-storage/ssh_config /etc/ssh/
 ENTRYPOINT ["/bin/sh", "/sbin/ssh-entrypoint.sh"]
 
 # keep alive
-CMD while true; do echo sleep 86400; done
+CMD while true; do sleep 86400; done
