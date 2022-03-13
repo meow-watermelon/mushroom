@@ -1,0 +1,7 @@
+PermitRootLogin yes
+AuthorizedKeysFile .ssh/authorized_keys
+IgnoreUserKnownHosts no
+PasswordAuthentication no
+AllowTcpForwarding no
+GatewayPorts no
+X11Forwarding no

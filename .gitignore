@@ -1,0 +1,3 @@
+docker-image/shared-storage/root_ssh_dir/authorized_keys
+docker-image/shared-storage/root_ssh_dir/id_rsa
+docker-image/shared-storage/root_ssh_dir/id_rsa.pub
