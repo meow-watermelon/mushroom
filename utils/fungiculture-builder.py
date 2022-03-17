@@ -95,7 +95,6 @@ class ComposeBuilder:
 
         return self.compose_config
 
-
 if __name__ == '__main__':
     # set up command arguments
     parser = argparse.ArgumentParser(description='Mushroom HPC Cluster Docker Compose Configuration Generator')
