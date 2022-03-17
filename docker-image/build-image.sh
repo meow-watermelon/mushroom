@@ -9,7 +9,7 @@ then
     exit 2
 fi
 
-if /usr/bin/docker image ls mushroom:latest -q > /dev/null 2>&1
+if /usr/bin/docker image inspect mushroom:latest > /dev/null 2>&1
 then
     /usr/bin/docker image rm mushroom:latest
 fi
