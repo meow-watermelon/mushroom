@@ -1,27 +1,25 @@
-version: "3.8"
-
 networks:
-  fungiculture:
+  farm:
     driver: bridge
-
 services:
   head:
     image: mushroom:latest
     networks:
-      - fungiculture
+    - farm
   spore1:
     image: mushroom:latest
     networks:
-      - fungiculture
+    - farm
   spore2:
     image: mushroom:latest
     networks:
-      - fungiculture
+    - farm
   spore3:
     image: mushroom:latest
     networks:
-      - fungiculture
+    - farm
   spore4:
     image: mushroom:latest
     networks:
-      - fungiculture
+    - farm
+version: '3.8'
