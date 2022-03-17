@@ -9,5 +9,9 @@ then
     exit 2
 fi
 
-/usr/bin/docker image rm mushroom:latest
+if /usr/bin/docker image ls mushroom:latest -q > /dev/null 2>&1
+then
+    /usr/bin/docker image rm mushroom:latest
+fi
+
 /usr/bin/docker build -t mushroom:latest . --no-cache
