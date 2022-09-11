@@ -4,7 +4,7 @@ set -e
 set -x
 
 echo "### Unlocking root user ... ###"
-/usr/bin/passwd -u root
+/usr/bin/passwd -u root || /bin/true
 
 echo "### Installing system packages ... ###"
 /sbin/apk add --no-cache openrc openssh build-base
